@@ -1,0 +1,36 @@
+<html>
+    <body>
+        {% include "superior/barra.html" %}
+
+        
+
+    <h1>
+        Hola esto son plantilas en html 
+    </h1>
+    <p>
+        mi nombre es: {{nombre_persona}} {{apellido_personas}}
+    </p>
+    <p>esta es la hora actual {{fecha}} </p>
+    <p>esta es la hora actual {{fecha.day}} </p>
+    <p>esta es la hora actual {{fecha.year}} </p>
+    <p>esta es la hora actual {{fecha.hour}}/{{fecha.minute}}/{{fecha.second}} </p>
+
+    <p>
+        mi nombre es :::: {{segundo_nombre.upper}} {{segundo_apellido.upper}}<!--se pueden incovar metodos que perteenzcan a django como por ejemplo upper de python-->
+    </p>
+    <p> de ciudades {{ciudades}}</p><!--se puede acceder solo a 1 ejemplo ciudades.1-->
+    <p><strong>Ciudades</strong></p>
+    
+    <ul>
+    {% if Ciudades == null %} <!--evalua si la lista esta vacia-->
+     {% for i in ciudades %} 
+        <li>{{i}}</li>
+
+     {% endfor %}
+     {% else %}
+     <p>no hay elementos en al lista</p>
+     {% endif %} 
+    </ul>
+    
+    </body>
+    </html>

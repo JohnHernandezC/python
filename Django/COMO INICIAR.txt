@@ -1,0 +1,43 @@
+C:\Users\johnh\Desktop\Django
+
+django-admin startproject proyecto1
+lugo de crear el proyecto se crea la app en caso de que querramos una app
+#para crear una app se usa el comando 
+python manage.py startapp GestionPedidos #esto dentro de la carpeta que acabamos de crear ->cd name
+#solo se usa esto en caso de aplicaciones
+
+#activar base de datos
+python manage.py migrate
+
+#iniciar el servidor
+python manage.py runserver
+
+
+#parap revisar que todod este bien en l aplicacion se puede usar
+python manage.py check y nombre de la aplicacion
+#para crear la bbdd desde la app se usa
+python manage.py makemigrations  
+python manage.py migrate
+# para todos los cambios que se hagan en el modelo es necesario hacer una migracion
+
+#crear super ususario para aceder al panel de administracion
+python manage.py createsuperuser
+
+Django>django-admin help
+
+usuario
+john
+107...
+
+
+
+
+
+
+/////////////////////////////////
+
+
+
+
+
+

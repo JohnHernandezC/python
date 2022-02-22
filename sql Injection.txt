@@ -1,0 +1,3 @@
+' OR username='nombre de usuario' -- 
+al final va un espacio mas
+' OR usuario='prueba@outlook.es' --  

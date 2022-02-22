@@ -1,0 +1,46 @@
+<html>
+         <body>
+         <h2>
+         hola putos este es el inicio en Django
+         </h2>
+
+         {% if nombre_persona == 'el john' %}
+
+          <p>si soy</p>
+
+         {% endif %}
+         <p1>
+         mi nombre es: {{nombre_persona}} {{apellido_persona}}
+         </p1>
+
+
+
+         <h1 style="color: blue" >
+             la fecha actaul es {{fecha_actual}}
+         </h1>
+         <h1 style="color: blue" >
+             se puede mostrar solo el dia mes etc... asi {{fecha_actual.day}} <br>
+
+             o asi {{fecha_actual.year}}
+         </h1>
+
+         <h1>{{lista_temas}}</h1>
+         <h1><strong>esta es la lista de temas</strong></h1>
+         <p>
+
+         <ul>
+
+             {% if lista_temas %}  <!-- este if comprueba que la lista no este vacia-->
+              {% for  elTema in lista_temas %}
+
+               <li>{{elTema}}</li>
+
+              {% endfor %}
+             {% else %}
+              <p>la lista esta vacia</p>
+             {% endif %}
+
+         </ul>
+         </p>
+         </body>
+         </html>

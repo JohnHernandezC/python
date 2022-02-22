@@ -1,0 +1,18 @@
+<html> 
+    <head> 
+        <title> {% block title %} {% endblock %} </title> 
+    </head> 
+<body> 
+    {% include "superior/barra.html" %}
+
+    <h1 style="background-color:darkorchid; color:white; text-align:center">Pagina Django</h1> 
+    
+    <h3>Cursos de programacion, ofimatica y diseño web</3> 
+        
+     {% block content %} 
+     <!--todo lo que este dentro de estas lineas ser lo que cambie-->
+     {% endblock %} 
+
+     <p style="background-color:rgb(0, 0, 0); color:white; text-align:center">curso de Django Gracias por ver</p>
+</body> 
+</html>
