@@ -1,0 +1,19 @@
+{% extends 'social/layout.html' %}
+{% load humanize%}
+
+{% block content %}
+{% for i in post %}
+<article>
+    <div class="container-article">
+        <img src="{{i.user.profile.image.url}}">
+        <div>
+            <h2 class="username"><a href="#">{{ i.user.username }}</a></h2>
+            <i class="clock"></i>
+            <time data-time="#">{{i.timestamp|naturaltime}}</time>
+            <div class="post">{{i.content}}</div>
+        </div>
+    </div>
+</article>
+{% endfor %}
+
+{% endblock %}
